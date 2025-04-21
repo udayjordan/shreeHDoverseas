@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Squada+One&family=Stick+No+Bills:wght@300;400;500;600&family=Cedarville+Cursive&display=swap");
+
+@import "tailwindcss";
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-stick: "Stick No Bills", sans-serif;
+  --font-squada: "Squada One", sans-serif;
+  --font-cedarville: "Cedarville Cursive", cursive;
+  --color-primary: #ffbe30;
+  --color-secondary: #acb5b5;
+  --color-text: #173334;
+}
+
+/* Font Classes */
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-cedarville {
+  font-family: var(--font-cedarville);
+}
+
+.font-stick {
+  font-family: var(--font-stick);
+}
+
+.font-squada {
+  font-family: var(--font-squada);
+}
+
+/* Color Classes */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-custom {
+  color: var(--color-text);
+}
+
+/* Base Styles */
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

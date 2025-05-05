@@ -3,7 +3,6 @@ import logoImage from "../assets/logo.png";
 import {
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
 

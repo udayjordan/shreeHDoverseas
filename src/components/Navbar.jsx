@@ -27,14 +27,14 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
           {/* Centered Search Bar */}
-          <div className="relative flex justify-start">
+          {/* <div className="relative flex justify-start">
             <Search className="absolute left-3 top-2.5 h-4 w-4 text-[var(--color-primary)]" />
             <input
               type="text"
               placeholder="Search Products"
               className="font-poppins text-[16px] pl-9 pr-3 py-1 w-56 rounded-md bg-transparent border border-gray-400 text-white placeholder-gray-400 focus:outline-none focus:border-[var(--color-primary)]"
             />
-          </div>
+          </div> */}
 
           <a
             href="/"
@@ -66,6 +66,12 @@ const Navbar = () => {
           >
             Private Labelling
           </a>
+          <a
+              href="mailto:sanchitsingla33@gmail.com"
+              className="text-white text-[16px] hover:text-[var(--color-primary)] font-poppins"
+            >
+              Contact Us
+            </a>
         </div>
 
         {/* Mobile Menu Button */}

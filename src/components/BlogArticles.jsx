@@ -63,9 +63,10 @@ const BlogArticles = () => {
               </div>
             </div>
             <div className="flex justify-center pb-8">
-              <button className="bg-[#ffbe30] text-black px-6 py-2 rounded-md hover:bg-yellow-500">
+              {/* Button to read full article */}
+              {/*<button className="bg-[#ffbe30] text-black px-6 py-2 rounded-md hover:bg-yellow-500">
                 Read All
-              </button>
+              </button>*/}
             </div>
           </div>
         ))}

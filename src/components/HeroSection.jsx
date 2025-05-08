@@ -17,12 +17,12 @@ const HeroSection = () => {
                 Products
               </h1>
               <p className="self-stretch mt-6 text-xl tracking-normal leading-8 text-white max-md:max-w-full">
-                These super foods are packed with vital nutrients,
+                Experience the finest quality rice products,
                 <br />
-                including vitamins and minerals that can help keep you healthy.
+                carefully sourced and processed to preserve their natural goodness.
                 <br />
-                Plus they're easy to enjoy—just add water and let the magic
-                happen!
+                Perfect for everyday meals—simply add water and enjoy the
+                authentic taste of premium rice.
               </p>
               <button
                 onClick={() => navigate("/about-us")}

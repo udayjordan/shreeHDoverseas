@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import goldenStellaImage from "../assets/Golden_stella.webp";
 import traditionalBasmatiImage from "../assets/Traditional_Basmati.webp";
 
@@ -25,9 +26,9 @@ const ProductBenefit = () => {
               taste of tradition to your table. Easy to cook and ready in minutes—
               simply add water and enjoy the rich flavor of quality rice.
             </p>
-            <button className="mt-4 bg-[var(--color-primary)] text-black font-bold font-poppins py-2 px-4 rounded self-start transition-all duration-300 hover:bg-[#173334] hover:text-[var(--color-primary)]">
+            <Link to="/international-products" className="mt-4 bg-[var(--color-primary)] text-black font-bold font-poppins py-2 px-4 rounded self-start transition-all duration-300 hover:bg-[#173334] hover:text-[var(--color-primary)]">
               View All
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -49,9 +50,9 @@ const ProductBenefit = () => {
               vitamins and minerals that help keep you healthy. Just add water and
               let the magic happen!
             </p>
-            <button className="mt-4 bg-[var(--color-primary)] text-black font-bold font-poppins py-2 px-4 rounded self-start transition-all duration-300 hover:bg-[#173334] hover:text-[var(--color-primary)]">
+            <Link to="/international-products" className="mt-4 bg-[var(--color-primary)] text-black font-bold font-poppins py-2 px-4 rounded self-start transition-all duration-300 hover:bg-[#173334] hover:text-[var(--color-primary)]">
               View All
-            </button>
+            </Link>
           </div>
         </div>
       </div>

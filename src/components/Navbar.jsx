@@ -67,7 +67,7 @@ const Navbar = () => {
             Private Labelling
           </a>
           <a
-              href="mailto:sanchitsingla33@gmail.com"
+              href="mailto:shreehdoverseas84@gmail.com"
               className="text-white text-[16px] hover:text-[var(--color-primary)] font-poppins"
             >
               Contact Us
@@ -122,7 +122,7 @@ const Navbar = () => {
               Private Labelling
             </a>
             <a
-              href="mailto:sanchitsingla33@gmail.com"
+              href="mailto:shreehdoverseas84@gmail.com"
               className="text-white text-[16px] hover:text-[var(--color-primary)] font-poppins"
             >
               Contact Us

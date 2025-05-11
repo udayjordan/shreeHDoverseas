@@ -57,16 +57,23 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("/send-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...formData, quantity, category }),
-    });
+    try {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxVk12kRPjj-DrhJECKMSo0iHM9oiZDl5E--ZUsXFtyogtUbx8z8uWqfM9WvC--V6u5/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...formData, quantity, category }),
+      });
 
-    if (response.ok) {
-      alert("Quotation request sent successfully!");
-    } else {
-      alert("Failed to send request. Try again.");
+      if (response.ok) {
+        alert("Quotation request submitted successfully! You will get a call back soon!");
+      } else {
+        alert("Failed to send request. Please try again. later");
+      }
+    } catch (error) {
+      alert("An error occurred while submitting the request. Please try again.");
     }
   };
 
@@ -149,36 +156,29 @@ const Form = () => {
               </select>
 
               <div className="flex items-center justify-between">
-                <span className="font-semibold">
+                <span className="font-semibold text-gray-700">
                   Quantity ({category === "domestic" ? "Tonne" : "FCL"}):
                 </span>
-                <div className="flex items-center space-x-2">
-                  <button
-                    type="button"
-                    className="px-3 py-2 bg-gray-200 rounded-md"
-                    onClick={() => setQuantity(Math.max(0, quantity - 0.1))}
-                  >
-                    -
-                  </button>
-                  <input
-                    type="number"
-                    step="0.1"
-                    className="w-20 text-center border border-gray-300 rounded-md"
-                    value={quantity}
-                    onChange={(e) =>
-                      setQuantity(
-                        Math.max(0, Math.min(9999, Number(e.target.value)))
-                      )
+                <input
+                  type="number"
+                  step="0.1"
+                  min="0"
+                  max="9999"
+                  className="w-20 text-center border-2 border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:border-blue-500"
+                  value={quantity}
+                  onChange={(e) => {
+                    const value = Number(e.target.value);
+                    if (!isNaN(value)) {
+                      setQuantity(Math.max(0, Math.min(9999, value)));
                     }
-                  />
-                  <button
-                    type="button"
-                    className="px-3 py-2 bg-gray-200 rounded-md"
-                    onClick={() => setQuantity(Math.min(9999, quantity + 0.1))}
-                  >
-                    +
-                  </button>
-                </div>
+                  }}
+                  onClick={(e) => {
+                    if (e.target.value === '0') {
+                      e.target.value = '';
+                      e.target.select();
+                    }
+                  }}
+                />
               </div>
 
               <button

@@ -10,6 +10,7 @@ import CategoryPage from "./pages/CategoryPage";
 import HomePage from "./pages/HomePage";
 import AboutUs from "./components/AboutUs";
 import PrivateLabelling from "./components/PrivateLabelling";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/domestic-products" element={<DomesticProducts />} />
             <Route path="/international-products" element={<InternationalProducts />} />
             <Route path="/private-labelling" element={<PrivateLabelling />} />
+            <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/category/:id" element={<CategoryPage />} />
           </Routes>
         </main>

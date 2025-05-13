@@ -11,12 +11,14 @@ import HomePage from "./pages/HomePage";
 import AboutUs from "./components/AboutUs";
 import PrivateLabelling from "./components/PrivateLabelling";
 import ContactUs from "./components/ContactUs";
+import WhatsappWidget from './components/WhatsappWidget';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col relative">
         <Navbar />
+        <WhatsappWidget />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />

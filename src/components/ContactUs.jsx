@@ -24,7 +24,7 @@ const ContactUs = () => {
             <li>
               <a 
                 href="tel:+918278333193" 
-                className="text-blue-600 hover:text-blue-800 transition-colors duration-200"
+                className="text-black hover:text-black hover:underline transition-all duration-300"
                 onClick={(e) => {
                   e.preventDefault();
                   window.location.href = 'tel:+918278333193';
@@ -36,7 +36,7 @@ const ContactUs = () => {
             <li>
               <a 
                 href="tel:+919068757900" 
-                className="text-blue-600 hover:text-blue-800 transition-colors duration-200"
+                className="text-black hover:text-black hover:underline transition-all duration-300"
                 onClick={(e) => {
                   e.preventDefault();
                   window.location.href = 'tel:+919068757900';
@@ -60,7 +60,7 @@ const ContactUs = () => {
             <li>
               <a 
                 href="mailto:shreehdoverseas84@gmail.com" 
-                className="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-sm md:text-lg"
+                className="text-black hover:text-black hover:underline transition-all duration-300 text-sm md:text-lg"
                 onClick={(e) => {
                   e.preventDefault();
                   window.location.href = 'mailto:shreehdoverseas84@gmail.com';

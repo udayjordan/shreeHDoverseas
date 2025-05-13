@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link, useLocation } from 'react-router-dom';
 import logoImage from "../assets/logo.png";
 import {
   FaFacebookF,
@@ -7,6 +8,14 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, [location]);
   return (
     <footer className="bg-[#173334] text-white font-poppins py-8 px-4 sm:px-10 min-h-[300px]">
       <div className="container mx-auto grid md:grid-cols-4 gap-6 justify-center max-w-5xl sm:px-4">
@@ -38,10 +47,11 @@ const Footer = () => {
         <div className="col-span-1">
           <h3 className="text-base md:text-lg font-semibold mb-2">Navigation</h3>
           <ul className="space-y-1 md:space-y-2 text-xs md:text-sm">
-            <li>Search</li>
+            {/* <li>Search</li> */}
             {/* <li>My Cart</li> */}
             {/* <li>Wishlist</li> */}
-            <li>Categories</li>
+            <li><Link to="/domestic-products" className="text-white hover:text-[#ffbe30]">Domestic Categories</Link></li>
+            <li><Link to="/international-products" className="text-white hover:text-[#ffbe30]">International Categories</Link></li>
           </ul>
         </div>
 
@@ -49,10 +59,10 @@ const Footer = () => {
         <div className="col-span-1">
           <h3 className="text-base md:text-lg font-semibold mb-2">About Us</h3>
           <ul className="space-y-1 md:space-y-2 text-xs md:text-sm">
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li><Link to="/about-us" className="text-white hover:text-[#ffbe30]">About Us</Link></li>
+            <li><Link to="/contact-us" className="text-white hover:text-[#ffbe30]">Contact Us</Link></li>
             <li>FAQs</li>
-            <li>Delivery</li>
+            <li><Link to="/contact-us" className="text-white hover:text-[#ffbe30]">Delivery</Link></li>
             <li>Privacy Policy</li>
           </ul>
         </div>
@@ -60,7 +70,7 @@ const Footer = () => {
         {/* Newsletter Subscription */}
         <div className="col-span-1">
           <h3 className="text-base md:text-lg font-semibold text-[#ffbe30]">
-            Subscribe to our newsletter and get 20% off
+            Subscribe to our newsletter 
           </h3>
           <p className="mt-2 text-xs md:text-sm">
             Stay updated with our latest products and offers.

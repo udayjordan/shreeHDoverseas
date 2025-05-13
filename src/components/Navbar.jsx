@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="bg-[#173334] px-4 py-3">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo and Title */}
-        <div className="flex items-center space-x-4">
+        <a href="/" className="flex items-center space-x-4 hover:text-[var(--color-primary)]">
           <img src={logoImage} alt="Logo" className="h-12 w-12" />
           <div className="flex flex-col items-start">
             <h1 className="text-[28px] font-squada text-[var(--color-primary)]">
@@ -22,7 +22,7 @@ const Navbar = () => {
               Loyalty and Taste Speaks
             </p>
           </div>
-        </div>
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">

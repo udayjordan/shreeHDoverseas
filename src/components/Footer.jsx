@@ -8,26 +8,26 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#173334] text-white font-poppins py-8 px-10">
-      <div className="container mx-auto grid md:grid-cols-4 gap-6 justify-center max-w-5xl">
+    <footer className="bg-[#173334] text-white font-poppins py-8 px-4 sm:px-10 min-h-[300px]">
+      <div className="container mx-auto grid md:grid-cols-4 gap-6 justify-center max-w-5xl sm:px-4">
         {/* Company Info */}
         <div className="col-span-1">
-          <img src={logoImage} alt="Logo" className="h-20 w-20 ml-4" />
-          <h2 className="text-xl font-semibold text-[#ffbe30]">
+          <img src={logoImage} alt="Logo" className="h-16 w-16 md:h-20 md:w-20 ml-4" />
+          <h2 className="text-lg md:text-xl font-semibold text-[#ffbe30]">
             Shree HD Overseas
           </h2>
-          <p className="mt-2 text-sm">
+          <p className="mt-1 md:mt-2 text-xs md:text-sm">
             <strong>Manufacturing Unit 1:</strong> <br />
             Shree HD Overseas <br />
             SH 8, Nissing, Karnal Haryana 132024 (India)
           </p>
-          <p className="mt-2 text-sm">
+          <p className="mt-1 md:mt-2 text-xs md:text-sm">
             <strong>Manufacturing Unit 2:</strong> <br />
             Rama Krishna Agro Foods <br />
             Nissing Agondh Road, SH 8, <br />
             Nissing, Karnal Haryana 132024 (India)
           </p>
-          <p className="mt-2 text-sm">
+          <p className="mt-1 md:mt-2 text-xs md:text-sm">
             <strong>Oman Office:</strong> <br />
             Po Box 108, Barka Sanaiya, <br />
             Muscat, Sultanate of Oman
@@ -36,8 +36,8 @@ const Footer = () => {
 
         {/* Navigation */}
         <div className="col-span-1">
-          <h3 className="text-lg font-semibold mb-2">Navigation</h3>
-          <ul className="space-y-2 text-sm">
+          <h3 className="text-base md:text-lg font-semibold mb-2">Navigation</h3>
+          <ul className="space-y-1 md:space-y-2 text-xs md:text-sm">
             <li>Search</li>
             {/* <li>My Cart</li> */}
             {/* <li>Wishlist</li> */}
@@ -47,8 +47,8 @@ const Footer = () => {
 
         {/* About Us */}
         <div className="col-span-1">
-          <h3 className="text-lg font-semibold mb-2">About Us</h3>
-          <ul className="space-y-2 text-sm">
+          <h3 className="text-base md:text-lg font-semibold mb-2">About Us</h3>
+          <ul className="space-y-1 md:space-y-2 text-xs md:text-sm">
             <li>About Us</li>
             <li>Contact Us</li>
             <li>FAQs</li>
@@ -59,24 +59,24 @@ const Footer = () => {
 
         {/* Newsletter Subscription */}
         <div className="col-span-1">
-          <h3 className="text-lg font-semibold text-[#ffbe30]">
+          <h3 className="text-base md:text-lg font-semibold text-[#ffbe30]">
             Subscribe to our newsletter and get 20% off
           </h3>
-          <p className="mt-2 text-sm">
+          <p className="mt-2 text-xs md:text-sm">
             Stay updated with our latest products and offers.
           </p>
-          <div className="mt-3 flex">
+          <div className="mt-3 flex flex-col md:flex-row">
             <input
               type="email"
               placeholder="Enter Email Address..."
-              className="p-2 flex-grow bg-white rounded-l-md focus:outline-none text-black"
+              className="p-2 mb-2 md:mb-0 md:flex-grow bg-white rounded-md md:rounded-l-md focus:outline-none text-black"
             />
-            <button className="bg-[#ffbe30] text-black px-4 py-2 rounded-r-md hover:bg-yellow-500 focus:ring-2 focus:ring-yellow-300">
+            <button className="bg-[#ffbe30] text-black px-4 py-2 rounded-md md:rounded-r-md hover:bg-yellow-500 focus:ring-2 focus:ring-yellow-300">
               →
             </button>
           </div>
           {/* Social Links */}
-          <div className="flex space-x-4 mt-4">
+          <div className="flex space-x-4 mt-4 justify-center md:justify-start">
             <a
               href="https://www.facebook.com/share/18mBKWwFCq/?mibextid=wwXIfr"
               target="_blank"
@@ -106,7 +106,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="text-center mt-6 text-sm">
+      <div className="text-center mt-6 text-xs md:text-sm">
         <p>© 2025. All Rights Reserved</p>
       </div>
     </footer>

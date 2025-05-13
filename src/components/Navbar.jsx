@@ -104,6 +104,12 @@ const Navbar = () => {
               Home
             </a>
             <a
+            href="/about-us"
+            className="text-white text-[16px] hover:text-[var(--color-primary)] font-poppins"
+          >
+            About Us
+          </a>
+            <a
               href="/domestic-products"
               className="text-white text-[16px] hover:text-[var(--color-primary)] font-poppins"
             >

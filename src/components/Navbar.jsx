@@ -88,14 +88,6 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden mt-4 pb-4">
-          <div className="relative mb-4">
-            <input
-              type="text"
-              placeholder="Search Products"
-              className="font-poppins text-[16px] w-full px-3 py-1 rounded-md bg-transparent border border-gray-400 text-white placeholder-gray-400 focus:outline-none focus:border-[var(--color-primary)]"
-            />
-            <Search className="absolute right-3 top-2.5 h-4 w-4 text-[var(--color-primary)]" />
-          </div>
           <div className="flex flex-col space-y-3 text-center">
             <a
               href="/"

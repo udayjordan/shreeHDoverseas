@@ -60,7 +60,7 @@ const ContactUs = () => {
             <li>
               <a 
                 href="mailto:shreehdoverseas84@gmail.com" 
-                className="text-blue-600 hover:text-blue-800 transition-colors duration-200"
+                className="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-sm md:text-lg"
                 onClick={(e) => {
                   e.preventDefault();
                   window.location.href = 'mailto:shreehdoverseas84@gmail.com';
